@@ -1,0 +1,1049 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Mihoyo";
+  src: url("../font/mihoyo.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*-------- Mobile Media Queries ---------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Mihoyo', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #1f1f20;
+  overflow-x: hidden;
+}
+
+.loaded {
+  background-color: #f6f6f6;
+}
+
+.loaded .logo {
+  display: none !important;
+}
+
+.loaded .teamContainer {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.loaded .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  height: 5.66rem;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1f1f20;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  position: relative;
+}
+
+header img {
+  height: 3rem;
+  width: 3rem;
+}
+
+header .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 2%;
+}
+
+header .socialMedia > div {
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-right: .6rem;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+header .socialMedia > div:hover {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+header .socialMedia > div:nth-child(1):hover svg path {
+  fill: #e53935;
+}
+
+header .socialMedia > div:nth-child(2):hover svg path {
+  fill: #55acee;
+}
+
+header .socialMedia > div:nth-child(3) {
+  border-radius: 100%;
+}
+
+header .socialMedia > div:nth-child(3):hover svg path {
+  fill: #c2bdbd;
+}
+
+header .socialMedia > div svg {
+  height: 100%;
+  width: 100%;
+}
+
+.loading {
+  -webkit-animation: rotateLogo 2000ms cubic-bezier(0.86, 0, 0.07, 1) alternate infinite;
+          animation: rotateLogo 2000ms cubic-bezier(0.86, 0, 0.07, 1) alternate infinite;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.logo > img {
+  width: 15.25rem;
+  height: 15.1875rem;
+  -webkit-animation: rotateLogo 2000ms cubic-bezier(0.86, 0, 0.07, 1) alternate infinite;
+          animation: rotateLogo 2000ms cubic-bezier(0.86, 0, 0.07, 1) alternate infinite;
+}
+
+.teamContainer {
+  height: 90%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: height 200ms ease-in-out;
+  transition: height 200ms ease-in-out;
+}
+
+.characterContainer {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.charContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.charContainer:nth-child(1)::before, .charContainer:nth-child(2)::before, .charContainer:nth-child(3)::before, .charContainer:nth-child(4)::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: -99%;
+  top: 0;
+  z-index: -3;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  -webkit-transition: background-color 300ms ease-in;
+  transition: background-color 300ms ease-in;
+}
+
+.charContainer:nth-child(4)::before {
+  left: 99% !important;
+}
+
+.charContainer:nth-child(3)::before {
+  left: 50% !important;
+}
+
+.charContainer:nth-child(2)::before {
+  left: 1% !important;
+}
+
+.charContainer:hover .character .arrows {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.character {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.character:last-child .charImg::after {
+  display: none !important;
+}
+
+.character::after {
+  content: url("");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0.12);
+          transform: scale(0.12);
+  top: 25%;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.character .charImg {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.character .charImg img {
+  height: 100%;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+/*.character .arrows {
+  position: absolute;
+  height: 100%;
+  width: 90%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  left: 9%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}*/
+
+.character .change,
+.character .swap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  height: 33%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.character .change .arrow,
+.character .switch .arrow {
+  height: 2.4rem;
+  width: 2.4rem;
+  cursor: pointer;
+}
+
+.character .change .arrow > svg,
+.character .switch .arrow > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.character .change .left svg,
+.character .switch .left svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.teamContainer {
+  display: none;
+}
+
+.footer {
+  -webkit-transition: position 200ms ease-in-out;
+  transition: position 200ms ease-in-out;
+  display: none;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1f1f20;
+}
+
+.footer .part1 {
+  height: 5rem;
+  width: 100%;
+}
+
+.footer .part1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .colors > div {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  margin-right: 1rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  text-shadow: 2px 2px 1px #000;
+  color: #FFF;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.footer .colors > div:last-child {
+  margin-right: 0 !important;
+}
+
+.footer .colors > div:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.footer .teamInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .teamInfo .teamImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  background-color: #181717;
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-box-shadow: 0px 0px 2px 2px #131313;
+          box-shadow: 0px 0px 2px 2px #131313;
+}
+
+.footer .teamInfo .teamImg:hover {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.footer .teamInfo .teamImg > svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.footer .teamInfo .teamImg > svg path {
+  fill: #FFF !important;
+}
+
+.footer .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  background-color: #181717;
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-box-shadow: 0px 0px 2px 2px #131313;
+          box-shadow: 0px 0px 2px 2px #131313;
+  margin-left: 1.5rem;
+  position: relative;
+}
+
+.footer .link::after {
+  content: 'copied';
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  left: 5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #FFF;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.footer .link > svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+.footer .link > svg path {
+  fill: #FFF !important;
+}
+
+.footer .link:hover {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.footer .copied::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-user-select: initial;
+     -moz-user-select: initial;
+      -ms-user-select: initial;
+          user-select: initial;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.footer .generate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #181717;
+  border-radius: 100%;
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-box-shadow: 0px 0px 2px 2px #131313;
+          box-shadow: 0px 0px 2px 2px #131313;
+}
+
+.footer .generate:hover {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.footer .generate svg path {
+  fill: #FFF;
+}
+
+.footer .orientation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .orientation > div {
+  background-color: #181717;
+  border-radius: 100%;
+  height: 4rem;
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+  -webkit-box-shadow: 0px 0px 2px 2px #131313;
+          box-shadow: 0px 0px 2px 2px #131313;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.footer .orientation > div:hover {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.footer .orientation > div:last-child {
+  margin-right: 0 !important;
+}
+
+.footer .orientation > div > svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer .orientation > div > svg path {
+  fill: #FFF !important;
+}
+
+.footer .orientation .selected {
+  background-color: #FFF;
+}
+
+.footer .orientation .selected svg path {
+  fill: #000 !important;
+}
+
+.footer .part2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 5rem;
+  width: 100%;
+}
+
+.footer .part2 .gamerInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .part2 .platform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .part2 .platform > div {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 2px 2px #131313;
+          box-shadow: 0px 0px 2px 2px #131313;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+}
+
+.footer .part2 .platform > div:hover {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.footer .part2 .platform > div svg {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.footer .part2 .platform .selectedPlatform {
+  background-color: #FFF;
+}
+
+.footer .part2 .platform .selectedPlatform svg path {
+  fill: #000 !important;
+}
+
+.footer .part2 .gamerTag label {
+  height: 3rem;
+  width: 15rem;
+  position: relative;
+}
+
+.footer .part2 .gamerTag label::after {
+  content: '';
+  position: relative;
+  display: block;
+  top: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.footer .part2 .gamerTag label:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.footer .part2 .gamerTag input {
+  font-family: 'Mihoyo', sans-serif;
+  color: #FFF;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  background-color: transparent;
+  font-weight: 500;
+  height: 2.5rem;
+  width: 15rem;
+  display: block;
+  outline: none;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+.footer .part2 .gamerTag input::-webkit-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #FFF;
+}
+
+.footer .part2 .gamerTag input:-ms-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #FFF;
+}
+
+.footer .part2 .gamerTag input::-ms-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #FFF;
+}
+
+.footer .part2 .gamerTag input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #FFF;
+}
+
+.footer .part2 .checkBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .part2 .checkBoxes > div label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+  color: #FFF;
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+
+.footer .part2 .checkBoxes input[type='checkbox'] {
+  display: none;
+}
+
+.footer .part2 .checkBoxes .checkboxSvg {
+  margin-right: 1rem;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  stroke: #c0c2c4;
+  stroke-width: 5;
+  fill: white;
+  stroke-width: 6px;
+}
+
+.footer .part2 .checkBoxes .checkboxSvg .box {
+  stroke-dasharray: 320;
+  stroke-dashoffset: 0;
+  fill: white;
+  -webkit-transition: stroke-dashoffset 150ms linear, fill 100ms ease-in-out;
+  transition: stroke-dashoffset 150ms linear, fill 100ms ease-in-out;
+  stroke-width: 6px;
+}
+
+.footer .part2 .checkBoxes .checkboxSvg .check {
+  stroke-dasharray: 82;
+  stroke-dashoffset: 83;
+  fill: none;
+  -webkit-transition: stroke-dashoffset 150ms linear, fill 100ms ease-in-out;
+  transition: stroke-dashoffset 150ms linear, fill 100ms ease-in-out;
+  stroke-width: 11px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footer .part2 .checkBoxes .checked .check {
+  stroke-dashoffset: 0;
+  stroke: #FFF;
+}
+
+.footer .part2 .checkBoxes .checked .box {
+  fill: #181717;
+  stroke: #181717;
+  stroke-width: 10px;
+}
+
+.footer .part2 .checkBoxes .checked path {
+  fill: #181717;
+  stroke: #181717;
+}
+
+.gamer {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1f1f20;
+  position: absolute;
+  height: 7%;
+  bottom: 2%;
+  border-radius: 39px;
+  left: 3%;
+  padding: 0 1rem;
+}
+
+.gamer .svg {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.gamer .svg svg {
+  height: 100%;
+  width: 100%;
+}
+
+.gamer p {
+  color: #FFF;
+  font-size: 2.3rem;
+  margin-left: 1rem;
+  letter-spacing: 2px;
+}
+
+.photoMode {
+  overflow: hidden !important;
+}
+
+.photoMode header {
+  height: 0 !important;
+}
+
+.photoMode .footer {
+  right: 100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  display: none !important;
+}
+
+.photoMode .teamContainer {
+  height: 100% !important;
+}
+
+.photoMode .character::after {
+  -webkit-transform: scale(0.16);
+          transform: scale(0.16);
+  top: 30%;
+  opacity: 1;
+}
+
+.photoMode .arrows {
+  display: none;
+}
+
+.photoMode .gamer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hideGamerTag {
+  display: none !important;
+}
+
+.lowOp {
+  opacity: .6;
+}
+
+.swaped {
+  -webkit-animation: imgFade 300ms cubic-bezier(0.86, 0, 0.07, 1);
+          animation: imgFade 300ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.smol {
+  height: 93% !important;
+  max-width: 120% !important;
+}
+
+.loaded {
+  background-color: #f6f6f6;
+}
+
+.loaded .logo {
+  display: none !important;
+}
+
+.loaded .teamContainer {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.loaded header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.loaded .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 0px) and (max-width: 736px) {
+  .teamContainer {
+    height: unset !important;
+  }
+  .loaded {
+    position: relative;
+  }
+  .loaded .logo {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    background-color: #1f1f20;
+  }
+  .loaded .logo img {
+    width: 9.25rem;
+    height: 9.1875rem;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+  }
+  .loaded .teamContainer, .loaded header, .loaded .footer {
+    display: none !important;
+  }
+  #characterContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #characterContainer .charContainer {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  #characterContainer .charContainer:last-child .charImg {
+    overflow: hidden;
+  }
+  #characterContainer .character {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  #characterContainer .charImg {
+    height: 20rem;
+    overflow: hidden;
+  }
+  #characterContainer .charImg img,
+  #characterContainer .charImg .smol {
+    position: absolute;
+    height: 55rem !important;
+    max-width: unset !important;
+    top: 0rem;
+  }
+  .footer > div {
+    height: unset !important;
+  }
+}
+
+@-webkit-keyframes rotateLogo {
+  from {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+  to {
+    -webkit-transform: rotate(360deg) scale(0.2);
+            transform: rotate(360deg) scale(0.2);
+  }
+}
+
+@keyframes rotateLogo {
+  from {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+  to {
+    -webkit-transform: rotate(360deg) scale(0.2);
+            transform: rotate(360deg) scale(0.2);
+  }
+}
+
+@-webkit-keyframes imgFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes imgFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=teammaker.css.map */
