@@ -1,7 +1,425 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/teammaker.css">
+    <link rel="icon" href="./app_assets/paimonDerp.png">
+    <title>Genshin Impact Team Maker</title>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with Github Pages.</p>
+<div class="logo">
+    <img src="./app_assets/paimonDerp.png" alt="">
+    <div class="noMobile">
+        <p>How about we explore the area ahead of us later? No mobile version yet!</p>
+        <img src="./app_assets/paimonIncorrect.png" alt="No mobile version yet!">
+    </div>
+</div>
+
+<header>
+    <div class="headerLogo">
+        <a href="https://github.com/MatthewMercado/Genshin-Impact-Team-Maker">
+            <img src="./app_assets/Genshin-Impact-logo.png" alt="Genshin Impact Logo">
+        </a>
+    </div>
+    <div class="socialMedia">
+        <div class="twitter">
+            <a href="https://twitter.com/MatengMercado">
+                <svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m21.552 7.749c0-.217-.008-.428-.018-.636.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.752.206-1.678.198-2.221.078.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 9.054 0 14.004-7.5 14.004-14.001z"
+                        fill="#FFF" /></svg>
+            </a>
+        </div>
+        <div class="github">
+            <a href="https://github.com/MatthewMercado">
+                <svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
+                        fill="#FFF" /></svg>
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="teamContainer">
+    <div class="characterContainer" id="characterContainer">
+        <div class="charContainer" data-position="first">
+            <div class="character">
+                <div class="charImg">
+                    <img src="./character_assets/cards/Lumine_c.png" data-char="Lumine"
+                        data-position="first">
+                </div>
+                <div class="arrows">
+                    <div class="change">
+                        <div class="leftArrow" data-position="first" data-direction="prev" data-action="change">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                                xml:space="preserve">
+                                <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                                H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                                c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                                L306.219,45.796z" />
+                            </svg>
+                        </div>
+                        <div class="rightArrow" data-position="first" data-direction="next" data-action="change">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                                xml:space="preserve">
+                                <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                                H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                                c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                                L306.219,45.796z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swap">
+                        <div class="leftArrow" data-position="first" data-direction="prev" data-action="swap">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                                xml:space="preserve">
+                                <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                                H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                                c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                                L306.219,45.796z" />
+                            </svg>
+                        </div>
+                        <div class="rightArrow" data-position="first" data-direction="next" data-action="swap">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                                xml:space="preserve">
+                                <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                                H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                                c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                                L306.219,45.796z" />
+                            </svg>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="charContainer" data-position="second">
+    <div class="character">
+        <div class="charImg">
+            <img src="./character_assets/cards/Amber_c.png" data-char="Amber"
+                data-position="second">
+        </div>
+        <div class="arrows">
+            <div class="change">
+                <div class="leftArrow" data-position="second" data-direction="prev" data-action="change">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                        xml:space="preserve">
+                        <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                        H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                        c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                        L306.219,45.796z" />
+                    </svg>
+                </div>
+
+                <div class="rightArrow" data-position="second" data-direction="next" data-action="change">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                        xml:space="preserve">
+                        <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                        H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                        c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                        L306.219,45.796z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="swap">
+                <div class="leftArrow" data-position="second" data-direction="prev" data-action="swap">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                        xml:space="preserve">
+                        <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                        H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                        c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                        L306.219,45.796z" />
+                    </svg>
+                </div>
+                <div class="rightArrow" data-position="second" data-direction="next" data-action="swap">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                        xml:space="preserve">
+                        <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                        H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                        c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                        L306.219,45.796z" />
+                    </svg>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<div class="charContainer" data-position="third">
+    <div class="character">
+        <div class="charImg">
+            <img src="./character_assets/cards/Kaeya_c.png" data-char="Kaeya"
+                data-position="third">
+        </div>
+        <div class="arrows">
+            <div class="change">
+                <div class="leftArrow" data-position="third" data-direction="prev" data-action="change">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                        xml:space="preserve">
+                        <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                        H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                        c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                        L306.219,45.796z" />
+                    </svg>
+                </div>
+                <div class="rightArrow" data-position="third" data-direction="next"
+                    data-action="change">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                        xml:space="preserve">
+                        <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                        H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                        c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                        L306.219,45.796z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="swap">
+                <div class="leftArrow" data-position="third" data-direction="prev" data-action="swap">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                        xml:space="preserve">
+                        <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                        H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                        c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                        L306.219,45.796z" />
+                    </svg>
+                </div>
+                <div class="rightArrow" data-position="third" data-direction="next"
+                    data-action="swap">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                        xml:space="preserve">
+                        <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                        H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                        c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                        L306.219,45.796z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="charContainer" data-position="fourth">
+            <div class="character">
+                <div class="charImg">
+                    <img src="./character_assets/cards/Lisa_c.png" data-char="Lisa"
+                        data-position="fourth">
+                </div>
+                <div class="arrows">
+                    <div class="change">
+                        <div class="leftArrow" data-position="fourth" data-direction="prev" data-action="change">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                                xml:space="preserve">
+                                <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                                H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                                c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                                L306.219,45.796z" />
+                            </svg>
+                        </div>
+                        <div class="rightArrow" data-position="fourth" data-direction="next"
+                            data-action="change">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                                xml:space="preserve">
+                                <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                                H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                                c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                                L306.219,45.796z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swap">
+                        <div class="leftArrow" data-position="fourth" data-direction="prev" data-action="swap">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                                xml:space="preserve">
+                                <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                                H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                                c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                                L306.219,45.796z" />
+                            </svg>
+                        </div>
+                        <div class="rightArrow" data-position="fourth" data-direction="next"
+                            data-action="swap">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;"
+                                xml:space="preserve">
+                                <path style="fill:#FF9800;" d="M306.219,45.796c-21.838-21.838-57.245-21.838-79.083,0s-21.838,57.245,0,79.083l77.781,77.803
+                                H53.333C23.878,202.682,0,226.56,0,256.015c0,29.455,23.878,53.333,53.333,53.333h251.584l-77.781,77.781
+                                c-21.838,21.838-21.838,57.245,0,79.083c21.838,21.838,57.245,21.838,79.083,0l202.667-202.667c4.164-4.165,4.164-10.917,0-15.083
+                                L306.219,45.796z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="gamer">
+                    <div class="svg">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <path style="fill:#ffffff;" d="M397,0H281v512h116c63.411,0,115-51.589,115-115V115C512,51.589,460.411,0,397,0z M396.5,332
+            c-33.359,0-60.5-27.141-60.5-60.5s27.141-60.5,60.5-60.5s60.5,27.141,60.5,60.5S429.859,332,396.5,332z" />
+                        <path style="fill:#ffffff;" d="M251,512H115C51.589,512,0,460.411,0,397V115C0,51.589,51.589,0,115,0h136V512z M115,30
+            c-46.869,0-85,38.131-85,85v282c0,46.869,38.131,85,85,85h106V30H115z" />
+                        <path style="fill:#ffffff;" d="M125.5,211C92.141,211,65,183.859,65,150.5S92.141,90,125.5,90s60.5,27.141,60.5,60.5
+            S158.859,211,125.5,211z" />
+                    </svg>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="part1">
+                        <div class="teamInfo">
+                            <div class="teamImg">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 242.133 242.133" style="enable-background:new 0 0 242.133 242.133;" xml:space="preserve">
+                <path id="XMLID_26_" d="M89.247,131.673l-47.732,47.73l-15.909-15.91c-4.29-4.291-10.742-5.572-16.347-3.252
+                    C3.654,162.563,0,168.033,0,174.1v53.032c0,8.284,6.716,15,15,15l53.033,0.001c0.007-0.001,0.012-0.001,0.019,0
+                    c8.285,0,15-6.716,15-15c0-4.377-1.875-8.316-4.865-11.059l-15.458-15.458l47.73-47.729c5.858-5.858,5.858-15.355,0-21.213
+                    C104.603,125.815,95.104,125.816,89.247,131.673z"/>
+                <path id="XMLID_28_" d="M227.133,0H174.1c-6.067,0-11.536,3.655-13.858,9.26c-2.321,5.605-1.038,12.057,3.252,16.347l15.911,15.911
+                    l-47.729,47.73c-5.858,5.858-5.858,15.355,0,21.213c2.929,2.929,6.768,4.393,10.606,4.393c3.839,0,7.678-1.464,10.606-4.394
+                    l47.73-47.73l15.909,15.91c2.869,2.87,6.706,4.394,10.609,4.394c1.933,0,3.882-0.373,5.737-1.142
+                    c5.605-2.322,9.26-7.792,9.26-13.858V15C242.133,6.716,235.417,0,227.133,0z"/>
+            </svg>
+                            </div>
+                            <div class="link">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 477.389 477.389" style="enable-background:new 0 0 477.389 477.389;" xml:space="preserve">
+                    <path d="M451.209,68.647c-16.787-16.799-39.564-26.234-63.312-26.226v0c-23.739-0.056-46.516,9.376-63.266,26.197L209.056,184.194
+                        c-22.867,22.903-31.609,56.356-22.869,87.518c2.559,9.072,11.988,14.352,21.06,11.793c9.072-2.559,14.352-11.988,11.793-21.06
+                        c-5.388-19.271,0.018-39.95,14.148-54.118L348.763,92.768c21.608-21.613,56.646-21.617,78.259-0.008
+                        c21.613,21.608,21.617,56.646,0.009,78.259L311.456,286.594c-7.574,7.584-17.193,12.797-27.682,15.002
+                        c-9.228,1.921-15.151,10.959-13.23,20.187c1.652,7.935,8.657,13.613,16.762,13.588c1.193,0.001,2.383-0.125,3.55-0.375
+                        c16.951-3.575,32.494-12.007,44.732-24.269l115.576-115.558C486.114,160.243,486.134,103.598,451.209,68.647z"/>
+                    <path d="M290.702,206.142c-2.559-9.072-11.988-14.352-21.06-11.793s-14.352,11.988-11.793,21.06
+                        c5.388,19.271-0.018,39.95-14.148,54.118L128.125,385.103c-21.608,21.613-56.646,21.617-78.259,0.008
+                        c-21.613-21.608-21.617-56.646-0.009-78.259l115.576-115.593c7.562-7.582,17.17-12.795,27.648-15.002
+                        c9.243-1.849,15.237-10.84,13.388-20.082s-10.84-15.237-20.082-13.388c-0.113,0.023-0.225,0.046-0.337,0.071
+                        c-16.954,3.579-32.502,12.011-44.749,24.269L25.725,282.703c-34.676,35.211-34.242,91.865,0.969,126.541
+                        c34.827,34.297,90.731,34.301,125.563,0.008l115.575-115.593C290.7,270.756,299.442,237.303,290.702,206.142z"/>
+            </svg>
+                            </div>
+            
+                        </div>
+                            <div class="generate">
+                            <div class="random">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path fill="currentcolor" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        d="M7.38 5.555l15.592-1.367A3.419 3.419 0 0126.673 7.3L28.05 23.06a3.422 3.422 0 01-3.106 3.71L9.352 28.137a3.419 3.419 0 01-3.702-3.113L4.275 9.265a3.422 3.422 0 013.106-3.71zm.2 2.274a1.14 1.14 0 00-1.036 1.237l1.375 15.759a1.14 1.14 0 001.234 1.038l15.591-1.368a1.14 1.14 0 001.036-1.236l-1.376-15.76a1.14 1.14 0 00-1.234-1.037L7.58 7.829zm3.254 5.39a1.69 1.69 0 01-1.825-1.545 1.692 1.692 0 011.53-1.84 1.69 1.69 0 011.825 1.546 1.692 1.692 0 01-1.53 1.839zm10.065-.883a1.69 1.69 0 01-1.826-1.545 1.692 1.692 0 011.53-1.84 1.69 1.69 0 011.825 1.546 1.692 1.692 0 01-1.53 1.84zM11.72 23.373a1.69 1.69 0 01-1.825-1.545 1.692 1.692 0 011.53-1.84 1.69 1.69 0 011.825 1.545 1.692 1.692 0 01-1.53 1.84zm10.065-.883a1.69 1.69 0 01-1.825-1.545 1.692 1.692 0 011.53-1.84 1.69 1.69 0 011.825 1.546 1.692 1.692 0 01-1.53 1.84zm-5.476-4.635a1.69 1.69 0 01-1.825-1.546 1.692 1.692 0 011.53-1.839 1.69 1.69 0 011.825 1.545 1.692 1.692 0 01-1.53 1.84zM29.183 6.823l-.015.002A.915.915 0 0128.167 6c-.265-2.544-2.523-4.39-5.045-4.121h-.007a.916.916 0 01-1.002-.824.922.922 0 01.808-1.018h.002l.007-.001a6.387 6.387 0 014.718 1.408 6.498 6.498 0 012.347 4.363.922.922 0 01-.812 1.016zM8.547 32h-.008a6.395 6.395 0 01-4.578-1.818 6.51 6.51 0 01-1.96-4.553.92.92 0 01.895-.942h.016c.503-.008.917.4.926.91.044 2.559 2.134 4.595 4.67 4.55h.006a.918.918 0 01.927.91.92.92 0 01-.894.943z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        
+            
+                    <div class="part2">
+                        <div class="gamerInfo">
+                            <div class="platform">
+                            <div class="playstation" data-platform="playstation">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 106.726 106.726"
+                                    style="enable-background:new 0 0 106.726 106.726;" xml:space="preserve">
+                                    <path style="fill:#ffffff;" d="M11.703,67.563l-3.6,1.4c-5.4,2.3-8.2,4.7-8.1,6.8c0.3,3.1,3.8,5.4,10.2,7.1
+                        c8.3,2.2,16.7,2.7,25.4,1.4v-8.7l0,0l-6.9,2.6c-7.2,2.5-10.9,0.4-10.9,0.4c-1.1-0.7-1.6-2.4,1.4-3.5l3.8-1.4l12.6-4.5v-10.1
+                        l-3.2,1.1L11.703,67.563z" />
+                                    <path style="fill:#ffffff;" d="M64.303,32.463v25.9c5.4,2.6,10.2,2.8,13.8,0.1c3.7-2.6,5.7-7.1,5.7-13.9c0-7.1-1.4-12.5-4.5-16.1
+                        c-2.8-3.8-7.8-7-15.2-9.5c-9.2-3-17-5.6-23.2-6.9v77.5l16.7,5.1v-64.4C57.503,26.363,64.303,26.663,64.303,32.463z" />
+                                    <path style="fill:#ffffff;" d="M106.703,72.463c-0.1-2.7-3.3-4.8-9-6.7c-6.4-2.1-11.9-3.1-17.9-2.9c-5.5,0.1-12.1,1.9-18,3.8v9.9
+                        l16.2-5.7c0,0,4.9-1.8,9.1-0.7c3.2,0.8,3,2.6-0.2,3.7l-3.7,1.5l-21.4,7.7v10.1l10-3.6l24-8.5l2.8-1.3
+                        C104.403,77.663,107.003,75.363,106.703,72.463z" />
+                                </svg>
+            
+                            </div>
+                            <div class="windowsPC" data-platform="windowsPC">
+                                <svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="#ffffff">
+                                        <path
+                                            d="m17.903 1.75c-3.349 0-6.081 2.696-6.107 6.02l-3.803 5.427c-1.061-.096-1.976.123-2.785.614l-5.208-2.097v5.727l3.08 1.233c.445 2.039 2.278 3.576 4.447 3.576 2.358 0 4.312-1.803 4.527-4.099l5.855-4.259c3.359 0 6.091-2.711 6.091-6.073l-.001-.001c0-3.346-2.732-6.068-6.096-6.068zm-10.376 19.292c-1.287 0-2.395-.721-2.958-1.772.546.208 1.098.437 1.645.651 1.367.56 2.92-.107 3.466-1.468.552-1.361-.118-2.897-1.483-3.442l-1.393-.56c.241-.054.482-.08.723-.08 1.859 0 3.348 1.483 3.348 3.335 0 1.853-1.489 3.336-3.348 3.336zm10.382-9.156c-2.261 0-4.098-1.815-4.098-4.067 0-2.242 1.832-4.067 4.098-4.067 2.245 0 4.082 1.825 4.082 4.067 0 2.258-1.838 4.073-4.082 4.067z" />
+                                        <path
+                                            d="m17.92 4.556c-1.805 0-3.267 1.457-3.267 3.255s1.457 3.255 3.267 3.255c1.794 0 3.267-1.452 3.267-3.255s-1.473-3.255-3.267-3.255z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="nintendoSwitch" data-platform="nintendoSwitch">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path style="fill:#ffffff;" d="M397,0H281v512h116c63.411,0,115-51.589,115-115V115C512,51.589,460.411,0,397,0z M396.5,332
+                c-33.359,0-60.5-27.141-60.5-60.5s27.141-60.5,60.5-60.5s60.5,27.141,60.5,60.5S429.859,332,396.5,332z" />
+                                    <path style="fill:#ffffff;" d="M251,512H115C51.589,512,0,460.411,0,397V115C0,51.589,51.589,0,115,0h136V512z M115,30
+                    c-46.869,0-85,38.131-85,85v282c0,46.869,38.131,85,85,85h106V30H115z" />
+                                    <path style="fill:#ffffff;" d="M125.5,211C92.141,211,65,183.859,65,150.5S92.141,90,125.5,90s60.5,27.141,60.5,60.5
+                    S158.859,211,125.5,211z" />
+                                </svg>
+                            </div>
+                            <div class="mobile" data-platform="mobile">
+                                <!--Add mobile SVG here; android+apple logo-->
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path style="fill:#ffffff;" d="M397,0H281v512h116c63.411,0,115-51.589,115-115V115C512,51.589,460.411,0,397,0z M396.5,332
+                c-33.359,0-60.5-27.141-60.5-60.5s27.141-60.5,60.5-60.5s60.5,27.141,60.5,60.5S429.859,332,396.5,332z" />
+                                    <path style="fill:#ffffff;" d="M251,512H115C51.589,512,0,460.411,0,397V115C0,51.589,51.589,0,115,0h136V512z M115,30
+                    c-46.869,0-85,38.131-85,85v282c0,46.869,38.131,85,85,85h106V30H115z" />
+                                    <path style="fill:#ffffff;" d="M125.5,211C92.141,211,65,183.859,65,150.5S92.141,90,125.5,90s60.5,27.141,60.5,60.5
+                    S158.859,211,125.5,211z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="travelerName">
+                            <label>
+                                <input id="name" type="text" placeholder="your Traveler's name" value="Matt">
+                            </label>
+                        </div>
+                        <div class="checkBoxes">
+                            <div class="travelerNameCheckbox">
+                                <label>
+                                    <svg viewBox="0 0 100 100" class="checkboxSvg">
+                                        <path class=" box" d="M82,89H18c-3.87,0-7-3.13-7-7V18c0-3.87,3.13-7,7-7h64c3.87,0,7,3.13,7,7v64C89,85.87,85.87,89,82,89z">
+                                                    </path>
+                                                    <polyline class="check" points="25.5,53.5 39.5,67.5 72.5,34.5 "></polyline>
+                                    </svg>Hide Name
+                                    <input type="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+</div>
+<script src="./script/Genshin Impact Team Maker.js"></script>
 </body>
+
 </html>

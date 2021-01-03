@@ -3,213 +3,234 @@ const $ = e => document.querySelector(e);
 const $$ = e => document.querySelectorAll(e);
 const character = [{
     //When more elements are unlocked for the Travelers, or multiple for some characters, I'll add them manually here, instead of using 'All'.
-        name: 'Aether (Male Traveler)',
+        name: 'Aether',
         card: 'Aether_c',
         portrait: 'Aether_p',
-        element: 'None',
+        vision: 'None',
         weapon: 'Sword'
     },
     {
         name: 'Albedo',
         card: 'Albedo_c',
         portrait: 'Albedo_p',
-        element: 'Geo',
+        vision: 'Geo',
         weapon: 'Sword'
     },
     {
         name: 'Amber',
         card: 'Amber_c',
         portrait: 'Amber_p',
-        element: 'Pyro',
+        vision: 'Pyro',
         weapon: 'Bow'
     },
     /*{
         name: 'Ayaka',
         card: 'Ayaka_c',
         portrait: 'Ayaka_p',
-        element: 'Cryo',
+        vision: 'Cryo',
         weapon: 'Sword'
     },*/
     {
         name: 'Barbara',
         card: 'Barbara_c',
         portrait: 'Barbara_p',
-        element: 'Hydro',
+        vision: 'Hydro',
         weapon: 'Catalyst'
     },
     {
         name: 'Beidou',
         card: 'Beidou_c',
         portrait: 'Beidou_p',
-        element: 'Electro',
+        vision: 'Electro',
         weapon: 'Claymore'
     },
     {
         name: 'Bennett',
         card: 'Bennet_c',
         portrait: 'Bennett_p',
-        element: 'Pyro',
+        vision: 'Pyro',
         weapon: 'Sword'
     },
     {
         name: 'Chongyun',
         card: 'Chongyun_c',
         portrait: 'Chongyun_p',
-        element: 'Cryo',
+        vision: 'Cryo',
         weapon: 'Claymore'
     },
     {
         name: 'Diluc',
         card: 'Diluc_c',
         portrait: 'Diluc_p',
-        element: 'Pyro',
+        vision: 'Pyro',
         weapon: 'Claymore'
     },
     {
         name: 'Diona',
         card: 'Diona_c',
         portrait: 'Diona_p',
-        element: 'Cryo',
+        vision: 'Cryo',
         weapon: 'Bow'
     },
     {
         name: 'Fischl',
         card: 'Fischl_c',
         portrait: 'Fischl_p',
-        element: 'Electro',
+        vision: 'Electro',
         weapon: 'Bow'
     },
     /*{
         name: 'Ganyu',
         card: 'Ganyu_c',
         portrait: 'Ganyu_p',
-        element: 'Cryo',
+        vision: 'Cryo',
         weapon: 'Bow'
     },*/
+    /*{
+        name: 'Hu Tao',
+        card: 'HuTao_c',
+        portrait: 'HuTao_p',
+        vision: 'Pyro',
+        weapon: 'Polearm'
+    },*/    
     {
         name: 'Jean',
         card: 'Jean_c',
         portrait: 'Jean_p',
-        element: 'Anemo',
+        vision: 'Anemo',
         weapon: 'Sword'
     },
     {
         name: 'Kaeya',
         card: 'Kaeya_c',
         portrait: 'Kaeya_p',
-        element: 'Cryo',
+        vision: 'Cryo',
         weapon: 'Sword'
     },
     {
         name: 'Keqing',
         card: 'Keqing_c',
         portrait: 'Keqing_p',
-        element: 'Electro',
+        vision: 'Electro',
         weapon: 'Sword'
     },
     {
         name: 'Klee',
         card: 'Klee_c',
         portrait: 'Klee_p',
-        element: 'Pyro',
+        vision: 'Pyro',
         weapon: 'Catalyst'
     },
     {
         name: 'Lisa',
         card: 'Lisa_c',
         portrait: 'Lisa_p',
-        element: 'Electro',
+        vision: 'Electro',
         weapon: 'Catalyst'
     },
     {
-        name: 'Lumine (Female Traveler)',
+        name: 'Lumine',
         card: 'Lumine_c',
         portrait: 'Lumine_p',
-        element: 'None',
+        vision: 'None',
         weapon: 'Sword'
     },
     {
         name: 'Mona',
         card: 'Mona_c',
         portrait: 'Mona_p',
-        element: 'Hydro',
+        vision: 'Hydro',
         weapon: 'Catalyst'
     },
     {
         name: 'Ningguang',
         card: 'Ningguang_c',
         portrait: 'Ningguang_p',
-        element: 'Geo',
+        vision: 'Geo',
         weapon: 'Catalyst'
     },
     {
         name: 'Noelle',
         card: 'Noelle_c',
         portrait: 'Noelle_p',
-        element: 'Geo',
+        vision: 'Geo',
         weapon: 'Claymore'
     },
     {
         name: 'Qiqi',
         card: 'Qiqi_c',
         portrait: 'Qiqi_p',
-        element: 'Cryo',
+        vision: 'Cryo',
         weapon: 'Sword'
     },
     {
         name: 'Razor',
         card: 'Razor_c',
         portrait: 'Razor_p',
-        element: 'Electro',
+        vision: 'Electro',
         weapon: 'Claymore'
     },
+    /*{
+        name: 'Rosaria',
+        card: 'Rosaria_c',
+        portrait: 'Rosaria_p',
+        vision: 'Cryo',
+        weapon: 'Polearm'
+    },*/
     {
         name: 'Sucrose',
         card: 'Sucrose_c',
         portrait: 'Sucrose_p',
-        element: 'Anemo',
+        vision: 'Anemo',
         weapon: 'Catalyst'
     },
     {
         name: 'Tartaglia',
         card: 'Tartaglia_c',
         portrait: 'Tartaglia_p',
-        element: 'Hydro',
+        vision: 'Hydro',
         weapon: 'Bow'
     },
     {
         name: 'Venti',
         card: 'Venti_c',
         portrait: 'Venti_p',
-        element: 'Anemo',
+        vision: 'Anemo',
         weapon: 'Bow'
     },
     {
         name: 'Xiangling',
         card: 'Xiangling_c',
         portrait: 'Xiangling_p',
-        element: 'Pyro',
+        vision: 'Pyro',
         weapon: 'Polearm'
     },
+    /*{
+        name: 'Xiao',
+        card: 'Xiao_c',
+        portrait: 'Xiao_p',
+        vision: 'Anemo',
+        weapon: 'Polearm'
+    },*/
     {
         name: 'Xingqiu',
         card: 'Xinqiu_c',
         portrait: 'Xingqiu_p',
-        element: 'Hydro',
+        vision: 'Hydro',
         weapon: 'Sword'
     },
     {
         name: 'Xinyan',
         card: 'Xinyan_c',
         portrait: 'Xinyan_p',
-        element: 'Pyro',
+        vision: 'Pyro',
         weapon: 'Claymore'
     },
     {
         name: 'Zhongli',
         card: 'Zhongli_c',
         portrait: 'Zhongli_p',
-        element: 'Geo',
+        vision: 'Geo',
         weapon: 'Polearm'
     }
 ]
@@ -221,44 +242,44 @@ const teamPosition = {
 }
 
 const geoCount = character => {
-    if (character.element = 'Geo'){
+    if (character.vision = 'Geo'){
         geoCount+1;
     }
 }
 const pyroCount = character => {
-    if (character.element = 'Pyro'){
+    if (character.vision = 'Pyro'){
         pyroCount+1;
     }
 }
 const hydroCount = character => {
-    if (character.element = 'Hydro'){
+    if (character.vision = 'Hydro'){
         hydroCount+1;
     }
 }
 const anemoCount = character => {
-    if (character.element = 'Anemo'){
+    if (character.vision = 'Anemo'){
         anemoCount+1;
     }
 }
 const electroCount = character => {
-    if (character.element = 'Electro'){
+    if (character.vision = 'Electro'){
         electroCount+1;
     }
 }
 const cryoCount = character => {
-    if (character.element = 'Cryo'){
+    if (character.vision = 'Cryo'){
         cryoCount+1;
     }
 }
 /*const dendroCount = character => {
-    if (character.element = 'Dendro'){
+    if (character.vision = 'Dendro'){
         dendroCount+1;
     }
 }*/
 
 const travelerCount = character => teamPosition => {
     if (/*character.Aether == teamPosition.first  || character.Aether == teamPosition.second || character.Aether == teamPosition.third || character.Aether == teamPosition.fouth || character.Lumine == teamPosition.first || character.Lumine == teamPosition.second || character.Lumine == teamPosition.third || character.Lumine == teamPosition.fourth*/
-        character.element = 'None'){
+        character.vision = 'None'){
         geoCount+1;
         pyroCount+1;
         hydroCount+1;
@@ -363,7 +384,7 @@ $('.uidCheckbox > label').addEventListener('click' , () => {
     !(checkbox.checked) && svg.classList.remove('checked')
 })
 //Add more checkboxes once I check out the app in real-time
-/*$('.elementsCheckbox > label').addEventListener('click' , () => {
+/*$('.visionsCheckbox > label').addEventListener('click' , () => {
     const checkbox = $('.assistsCheckbox > label input');
     const svg = $('.assistsCheckbox label svg');
     checkbox.checked && svg.classList.add('checked')
