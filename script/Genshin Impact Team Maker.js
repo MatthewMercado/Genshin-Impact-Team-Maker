@@ -605,7 +605,7 @@ const updateUID = e => {
 $('#uid').addEventListener('input', updateUID);
 
 //Gotta figure out how to initialize later
-const initializeData = () => {
+/*const initializeData = () => {
     const char = $$('img[data-position]');
     const charContainer = $$('.charContainer');
     let charName = '';
@@ -620,7 +620,7 @@ const initializeData = () => {
     })
 
       $('.headerLogo  img').classList.remove('loading');
-}
+}*/
 
 const getUrl = () => {
     const char = $$('img[data-position]');
