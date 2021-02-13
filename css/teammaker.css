@@ -49,6 +49,14 @@ body {
   display: flex;
 }
 
+.lumineStartup {
+  display:none;
+}
+
+.aetherStartup {
+  display:none;
+}
+
 header {
   height: 5.66rem;
   display: none;

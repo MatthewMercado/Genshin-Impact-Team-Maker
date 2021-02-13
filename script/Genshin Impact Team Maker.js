@@ -6,231 +6,231 @@ const character = [{
         name: 'Aether',
         card: 'Aether_c',
         portrait: 'Aether_p',
-        vision: 'None',
+        element: 'None',
         weapon: 'Sword'
     },
     {
         name: 'Albedo',
         card: 'Albedo_c',
         portrait: 'Albedo_p',
-        vision: 'Geo',
+        element: 'Geo',
         weapon: 'Sword'
     },
     {
         name: 'Amber',
         card: 'Amber_c',
         portrait: 'Amber_p',
-        vision: 'Pyro',
+        element: 'Pyro',
         weapon: 'Bow'
     },
     /*{
         name: 'Ayaka',
         card: 'Ayaka_c',
         portrait: 'Ayaka_p',
-        vision: 'Cryo',
+        element: 'Cryo',
         weapon: 'Sword'
     },*/
     {
         name: 'Barbara',
         card: 'Barbara_c',
         portrait: 'Barbara_p',
-        vision: 'Hydro',
+        element: 'Hydro',
         weapon: 'Catalyst'
     },
     {
         name: 'Beidou',
         card: 'Beidou_c',
         portrait: 'Beidou_p',
-        vision: 'Electro',
+        element: 'Electro',
         weapon: 'Claymore'
     },
     {
         name: 'Bennett',
         card: 'Bennet_c',
         portrait: 'Bennett_p',
-        vision: 'Pyro',
+        element: 'Pyro',
         weapon: 'Sword'
     },
     {
         name: 'Chongyun',
         card: 'Chongyun_c',
         portrait: 'Chongyun_p',
-        vision: 'Cryo',
+        element: 'Cryo',
         weapon: 'Claymore'
     },
     {
         name: 'Diluc',
         card: 'Diluc_c',
         portrait: 'Diluc_p',
-        vision: 'Pyro',
+        element: 'Pyro',
         weapon: 'Claymore'
     },
     {
         name: 'Diona',
         card: 'Diona_c',
         portrait: 'Diona_p',
-        vision: 'Cryo',
+        element: 'Cryo',
         weapon: 'Bow'
     },
     {
         name: 'Fischl',
         card: 'Fischl_c',
         portrait: 'Fischl_p',
-        vision: 'Electro',
+        element: 'Electro',
         weapon: 'Bow'
     },
-    /*{
+    {
         name: 'Ganyu',
         card: 'Ganyu_c',
         portrait: 'Ganyu_p',
-        vision: 'Cryo',
+        element: 'Cryo',
         weapon: 'Bow'
-    },*/
+    },
     /*{
         name: 'Hu Tao',
         card: 'HuTao_c',
         portrait: 'HuTao_p',
-        vision: 'Pyro',
+        element: 'Pyro',
         weapon: 'Polearm'
     },*/    
     {
         name: 'Jean',
         card: 'Jean_c',
         portrait: 'Jean_p',
-        vision: 'Anemo',
+        element: 'Anemo',
         weapon: 'Sword'
     },
     {
         name: 'Kaeya',
         card: 'Kaeya_c',
         portrait: 'Kaeya_p',
-        vision: 'Cryo',
+        element: 'Cryo',
         weapon: 'Sword'
     },
     {
         name: 'Keqing',
         card: 'Keqing_c',
         portrait: 'Keqing_p',
-        vision: 'Electro',
+        element: 'Electro',
         weapon: 'Sword'
     },
     {
         name: 'Klee',
         card: 'Klee_c',
         portrait: 'Klee_p',
-        vision: 'Pyro',
+        element: 'Pyro',
         weapon: 'Catalyst'
     },
     {
         name: 'Lisa',
         card: 'Lisa_c',
         portrait: 'Lisa_p',
-        vision: 'Electro',
+        element: 'Electro',
         weapon: 'Catalyst'
     },
     {
         name: 'Lumine',
         card: 'Lumine_c',
         portrait: 'Lumine_p',
-        vision: 'None',
+        element: 'None',
         weapon: 'Sword'
     },
     {
         name: 'Mona',
         card: 'Mona_c',
         portrait: 'Mona_p',
-        vision: 'Hydro',
+        element: 'Hydro',
         weapon: 'Catalyst'
     },
     {
         name: 'Ningguang',
         card: 'Ningguang_c',
         portrait: 'Ningguang_p',
-        vision: 'Geo',
+        element: 'Geo',
         weapon: 'Catalyst'
     },
     {
         name: 'Noelle',
         card: 'Noelle_c',
         portrait: 'Noelle_p',
-        vision: 'Geo',
+        element: 'Geo',
         weapon: 'Claymore'
     },
     {
         name: 'Qiqi',
         card: 'Qiqi_c',
         portrait: 'Qiqi_p',
-        vision: 'Cryo',
+        element: 'Cryo',
         weapon: 'Sword'
     },
     {
         name: 'Razor',
         card: 'Razor_c',
         portrait: 'Razor_p',
-        vision: 'Electro',
+        element: 'Electro',
         weapon: 'Claymore'
     },
     /*{
         name: 'Rosaria',
         card: 'Rosaria_c',
         portrait: 'Rosaria_p',
-        vision: 'Cryo',
+        element: 'Cryo',
         weapon: 'Polearm'
     },*/
     {
         name: 'Sucrose',
         card: 'Sucrose_c',
         portrait: 'Sucrose_p',
-        vision: 'Anemo',
+        element: 'Anemo',
         weapon: 'Catalyst'
     },
     {
         name: 'Tartaglia',
         card: 'Tartaglia_c',
         portrait: 'Tartaglia_p',
-        vision: 'Hydro',
+        element: 'Hydro',
         weapon: 'Bow'
     },
     {
         name: 'Venti',
         card: 'Venti_c',
         portrait: 'Venti_p',
-        vision: 'Anemo',
+        element: 'Anemo',
         weapon: 'Bow'
     },
     {
         name: 'Xiangling',
         card: 'Xiangling_c',
         portrait: 'Xiangling_p',
-        vision: 'Pyro',
+        element: 'Pyro',
         weapon: 'Polearm'
     },
-    /*{
+    {
         name: 'Xiao',
         card: 'Xiao_c',
         portrait: 'Xiao_p',
-        vision: 'Anemo',
+        element: 'Anemo',
         weapon: 'Polearm'
-    },*/
+    },
     {
         name: 'Xingqiu',
         card: 'Xinqiu_c',
         portrait: 'Xingqiu_p',
-        vision: 'Hydro',
+        element: 'Hydro',
         weapon: 'Sword'
     },
     {
         name: 'Xinyan',
         card: 'Xinyan_c',
         portrait: 'Xinyan_p',
-        vision: 'Pyro',
+        element: 'Pyro',
         weapon: 'Claymore'
     },
     {
         name: 'Zhongli',
         card: 'Zhongli_c',
         portrait: 'Zhongli_p',
-        vision: 'Geo',
+        element: 'Geo',
         weapon: 'Polearm'
     }
 ]
@@ -241,52 +241,73 @@ const teamPosition = {
     fourth: 3
 }
 
-const geoCount = character => {
-    if (character.vision = 'Geo'){
-        geoCount+1;
-    }
+const charLimits = character => teamPosition => {
+//The first logical character limit in Genshin Impact is that Aether cannot be in the same party as Lumine. Once more party restrictions arise in the game, I will add them here.
+if (character.Aether == teamPosition.first  || character.Aether == teamPosition.second || character.Aether == teamPosition.third || character.Aether == teamPosition.fouth)
+{
+    character.Lumine != teamPosition.first;
+    character.Lumine != teamPosition.second;
+    character.Lumine != teamPosition.third;
+    character.Lumine != teamPosition.fourth;
 }
-const pyroCount = character => {
-    if (character.vision = 'Pyro'){
-        pyroCount+1;
-    }
-}
-const hydroCount = character => {
-    if (character.vision = 'Hydro'){
-        hydroCount+1;
-    }
-}
-const anemoCount = character => {
-    if (character.vision = 'Anemo'){
-        anemoCount+1;
-    }
-}
-const electroCount = character => {
-    if (character.vision = 'Electro'){
-        electroCount+1;
-    }
-}
-const cryoCount = character => {
-    if (character.vision = 'Cryo'){
-        cryoCount+1;
-    }
-}
-/*const dendroCount = character => {
-    if (character.vision = 'Dendro'){
-        dendroCount+1;
-    }
-}*/
 
+if (character.Lumine == teamPosition.first || character.Lumine == teamPosition.second || character.Lumine == teamPosition.third || character.Lumine == teamPosition.fourth)
+{
+    character.Aether != teamPosition.first;
+    character.Aether != teamPosition.second;
+    character.Aether != teamPosition.third;
+    character.Aether != teamPosition.fourth;
+}
+
+}
 const travelerCount = character => teamPosition => {
-    if (/*character.Aether == teamPosition.first  || character.Aether == teamPosition.second || character.Aether == teamPosition.third || character.Aether == teamPosition.fouth || character.Lumine == teamPosition.first || character.Lumine == teamPosition.second || character.Lumine == teamPosition.third || character.Lumine == teamPosition.fourth*/
-        character.vision = 'None'){
-        geoCount+1;
-        pyroCount+1;
-        hydroCount+1;
+    if (character.Aether == teamPosition.first  || character.Aether == teamPosition.second || character.Aether == teamPosition.third || character.Aether == teamPosition.fouth || character.Lumine == teamPosition.first || character.Lumine == teamPosition.second || character.Lumine == teamPosition.third || character.Lumine == teamPosition.fourth)
+    {
+        travelerCount+1;
         anemoCount+1;
+        geoCount+1;
+    }
+}
+
+const geoCount = character => {
+    if (character.element = 'Geo'){
+        geoCount+1;
+    }
+}
+
+const pyroCount = character => {
+    if (character.element = 'Pyro'){
+        pyroCount+1;
+    }
+}
+
+const hydroCount = character => {
+    if (character.element = 'Hydro'){
+        hydroCount+1;
+    }
+}
+
+const anemoCount = character => {
+    if (character.element = 'Anemo'){
+        anemoCount+1;
+    }
+}
+
+const electroCount = character => {
+    if (character.element = 'Electro'){
         electroCount+1;
+    }
+}
+
+const cryoCount = character => {
+    if (character.element = 'Cryo'){
         cryoCount+1;
-        //dendroCount+1;
+    }
+}
+
+const dendroCount = character => {
+    if (character.element = 'Dendro'){
+        dendroCount+1;
     }
 }
 
@@ -298,60 +319,118 @@ const elementalResonance = {
     Anemo2: 'Impetuous Winds',
     Electro2: 'High Voltage',
     Cryo2: 'Shattering Ice',
-    //Dendro2: 'Leafy',
+    Dendro2: 'Leafy',
     Geo2Pyro2: 'Enduring Rock & Fervant Flames',
     Geo2Hydro2: 'Enduring Rock & Soothing Waters',
     Geo2Anemo2: 'Enduring Rock & Impetuous Winds',
     Geo2Electro2: 'High Voltage & Enduring Rock',
     Geo2Cryo2: 'Enduring Rock & Shattering Ice',
-    //Geo2Dendro2: 'Enduring Rock & Leafy',
+    Geo2Dendro2: 'Enduring Rock & Leafy',
     Pyro2Hydro2: 'Fervant Flames & Soothing Waters',
     Pyro2Anemo2: 'Fervent Flames & Impetuous Winds',
     Pyro2Electro2: 'High Voltage & Fervant Flames',
     Pyro2Cryo2: 'Fervant Flames & Shattering Ice',
-    //Pyro2Dendro2: 'Fervent Flames & Leafy',
+    Pyro2Dendro2: 'Fervent Flames & Leafy',
     Hydro2Anemo2: 'Soothing Waters & Impetuous Winds',
     Hydro2Electro2: 'Soothing Waters & High Voltage',
     Hydro2Cryo2: 'Soothing Waters & Shattering Ice',
-    //Hydro2Dendro2: 'Soothing Waters & Leafy',
+    Hydro2Dendro2: 'Soothing Waters & Leafy',
     Anemo2Electro2: 'High Voltage & Impetuous Winds',
     Anemo2Cryo2: 'Impetuous Winds & Shattering Ice',
-    //Anemo2Dendro2: 'Impetuous Winds & Leafy',
+    Anemo2Dendro2: 'Impetuous Winds & Leafy',
     Electro2Cryo2: 'Shattering Ice & High Voltage',
-    //Electro2Dendro2: 'High Voltage & Leafy',
-    //Cryo2Dendro2: 'Shattering Ice & Leafy'
+    Electro2Dendro2: 'High Voltage & Leafy',
+    Cryo2Dendro2: 'Shattering Ice & Leafy',
+    Unique4WithTraveler: 'Protective Canopy (with Traveler)',
+    Geo2WithTraveler: 'Enduring Rock (with Traveler)',
+    Pyro2WithTraveler: 'Fervent Flames (with Traveler)',
+    Hydro2WithTraveler: 'Soothing Waters (with Traveler)',
+    Anemo2WithTraveler: 'Impetuous Winds (with Traveler)',
+    Electro2WithTraveler: 'High Voltage (with Traveler)',
+    Cryo2WithTraveler: 'Shattering Ice (with Traveler)',
+    Dendro2WithTraveler: 'Leafy (with Traveler)',
+    Geo2Pyro2WithTraveler: 'Enduring Rock & Fervant Flames (with Traveler)',
+    Geo2Hydro2WithTraveler: 'Enduring Rock & Soothing Waters (with Traveler)',
+    Geo2Anemo2WithTraveler: 'Enduring Rock & Impetuous Winds (with Traveler)',
+    Geo2Electro2WithTraveler: 'High Voltage & Enduring Rock (with Traveler)',
+    Geo2Cryo2WithTraveler: 'Enduring Rock & Shattering Ice (with Traveler)',
+    Geo2Dendro2WithTraveler: 'Enduring Rock & Leafy (with Traveler)',
+    Pyro2Hydro2WithTraveler: 'Fervant Flames & Soothing Waters (with Traveler)',
+    Pyro2Anemo2WithTraveler: 'Fervent Flames & Impetuous Winds (with Traveler)',
+    Pyro2Electro2WithTraveler: 'High Voltage & Fervant Flames (with Traveler)',
+    Pyro2Cryo2WithTraveler: 'Fervant Flames & Shattering Ice (with Traveler)',
+    Pyro2Dendro2WithTraveler: 'Fervent Flames & Leafy (with Traveler)',
+    Hydro2Anemo2WithTraveler: 'Soothing Waters & Impetuous Winds (with Traveler)',
+    Hydro2Electro2WithTraveler: 'Soothing Waters & High Voltage (with Traveler)',
+    Hydro2Cryo2WithTraveler: 'Soothing Waters & Shattering Ice (with Traveler)',
+    Hydro2Dendro2WithTraveler: 'Soothing Waters & Leafy (with Traveler)',
+    Anemo2Electro2WithTraveler: 'High Voltage & Impetuous Winds (with Traveler)',
+    Anemo2Cryo2WithTraveler: 'Impetuous Winds & Shattering Ice (with Traveler)',
+    Anemo2Dendro2WithTraveler: 'Impetuous Winds & Leafy (with Traveler)',
+    Electro2Cryo2WithTraveler: 'Shattering Ice & High Voltage (with Traveler)',
+    Electro2Dendro2WithTraveler: 'High Voltage & Leafy (with Traveler)',
+    Cryo2Dendro2WithTraveler: 'Shattering Ice & Leafy (with Traveler)'
 }
 
-const ResonanceCalc = elementalResonance => geoCount => pyroCount => hydroCount => anemoCount => electroCount => cryoCount => /*dendroCount =>*/ {
-    if(geoCount < 2 && pyroCount < 2 && hydroCount < 2 && anemoCount < 2 && electroCount < 2 && cryoCount < 2 /*&& dendroCount < 2*/) return elementalResonance.Unique4
+const ResonanceCalc = elementalResonance => geoCount => pyroCount => hydroCount => anemoCount => electroCount => cryoCount => dendroCount => travelerCount => {
+    if(geoCount < 2 && pyroCount < 2 && hydroCount < 2 && anemoCount < 2 && electroCount < 2 && cryoCount < 2 && dendroCount < 2 ) return elementalResonance.Unique4
     if(geoCount >= 2) return elementalResonance.Geo2
     if(pyroCount >= 2) return elementalResonance.Pyro2
     if(hydroCount >= 2 ) return elementalResonance.Hydro2
     if(anemoCount >= 2) return elementalResonance.Anemo2
     if(electroCount >= 2) return elementalResonance.Electro2
     if(cryoCount >= 2) return elementalResonance.Cryo2
-    //if(dendroCount >= 2) return elementalResonance.Dendro2
+    if(dendroCount >= 2) return elementalResonance.Dendro2
     if(geoCount >= 2 && pyroCount >= 2) return elementalResonance.Geo2Pyro2
     if(geoCount >= 2 && hydroCount >= 2) return elementalResonance.Geo2Hydro2
     if(geoCount >= 2 && anemoCount >= 2) return elementalResonance.Geo2Anemo2
     if(geoCount >= 2 && electroCount >= 2) return elementalResonance.Geo2Electro2
     if(geoCount >= 2 && cryoCount >= 2) return elementalResonance.Geo2Cryo2
-    //if(geocount >= 2 && dendroCount >= 2) return elementalResonance.Geo2Dendro2
+    if(geoCount >= 2 && dendroCount >= 2) return elementalResonance.Geo2Dendro2
     if(pyroCount >= 2 && hydroCount >= 2) return elementalResonance.Pyro2Hydro2
     if(pyroCount >= 2 && anemoCount >= 2) return elementalResonance.Pyro2Anemo2
     if(pyroCount >= 2 && electroCount >= 2) return elementalResonance.Pyro2Electro2
     if(pyroCount >= 2 && cryoCount >= 2) return elementalResonance.Pyro2Cryo2
-    //if(pyroCount >= 2 && dendroCount >= 2) return elementalResonance.Pyro2Dendro2
+    if(pyroCount >= 2 && dendroCount >= 2) return elementalResonance.Pyro2Dendro2
     if(hydroCount >= 2 && anemoCount >= 2) return elementalResonance.Hydro2Anemo2
     if(hydroCount >= 2 && electroCount >= 2) return elementalResonance.Hydro2Electro2
     if(hydroCount >= 2 && cryoCount >= 2) return elementalResonance.Hydro2Cryo2
-    //if(hydroCount >= 2 && dendroCount >= 2) return elementalResonance.Hydro2Dendro2
+    if(hydroCount >= 2 && dendroCount >= 2) return elementalResonance.Hydro2Dendro2
     if(anemoCount >= 2 && electroCount >= 2) return elementalResonance.Anemo2Electro2
-    if(anemoCount >= 2 && CryoCount >= 2) return elementalResonance.Anemo2Cryo2
-    //if(geoCount >= 2 && pyroCount >= 2) return elementalResonance.Anemo2Dendro2
+    if(anemoCount >= 2 && cryoCount >= 2) return elementalResonance.Anemo2Cryo2
+    if(geoCount >= 2 && pyroCount >= 2) return elementalResonance.Anemo2Dendro2
     if(electroCount >= 2 && cryoCount >= 2) return elementalResonance.Electro2Cryo2
-    //if(electroCount >= 2 && dendroCount >= 2) return elementalResonance.Electro2Dendro2
-    //if(cryoCount >= 2 && dendroCount >= 2) return elementalResonance.Cryo2Dendro2
+    if(electroCount >= 2 && dendroCount >= 2) return elementalResonance.Electro2Dendro2
+    if(cryoCount >= 2 && dendroCount >= 2) return elementalResonance.Cryo2Dendro2
+    if(travelerCount = 1 && geoCount < 2 && pyroCount < 2 && hydroCount < 2 && anemoCount < 2 && electroCount < 2 && cryoCount < 2 && dendroCount < 2 ) return elementalResonance.Unique4WithTraveler
+    if(travelerCount = 1 && geoCount >= 2) return elementalResonance.Geo2WithTraveler
+    if(travelerCount = 1 && pyroCount >= 2) return elementalResonance.Pyro2WithTraveler
+    if(travelerCount = 1 && hydroCount >= 2 ) return elementalResonance.Hydro2WithTraveler
+    if(travelerCount = 1 && anemoCount >= 2) return elementalResonance.Anemo2WithTraveler
+    if(travelerCount = 1 && electroCount >= 2) return elementalResonance.Electro2WithTraveler
+    if(travelerCount = 1 && cryoCount >= 2) return elementalResonance.Cryo2WithTraveler
+    if(travelerCount = 1 && dendroCount >= 2) return elementalResonance.Dendro2WithTraveler
+    if(travelerCount = 1 && geoCount >= 2 && pyroCount >= 2) return elementalResonance.Geo2Pyro2WithTraveler
+    if(travelerCount = 1 && geoCount >= 2 && hydroCount >= 2) return elementalResonance.Geo2Hydro2WithTraveler
+    if(travelerCount = 1 && geoCount >= 2 && anemoCount >= 2) return elementalResonance.Geo2Anemo2WithTraveler
+    if(travelerCount = 1 && geoCount >= 2 && electroCount >= 2) return elementalResonance.Geo2Electro2WithTraveler
+    if(travelerCount = 1 && geoCount >= 2 && cryoCount >= 2) return elementalResonance.Geo2Cryo2WithTraveler
+    if(travelerCount = 1 && geoCount >= 2 && dendroCount >= 2) return elementalResonance.Geo2Dendro2WithTraveler
+    if(travelerCount = 1 && pyroCount >= 2 && hydroCount >= 2) return elementalResonance.Pyro2Hydro2WithTraveler
+    if(travelerCount = 1 && pyroCount >= 2 && anemoCount >= 2) return elementalResonance.Pyro2Anemo2WithTraveler
+    if(travelerCount = 1 && pyroCount >= 2 && electroCount >= 2) return elementalResonance.Pyro2Electro2WithTraveler
+    if(travelerCount = 1 && pyroCount >= 2 && cryoCount >= 2) return elementalResonance.Pyro2Cryo2WithTraveler
+    if(travelerCount = 1 && pyroCount >= 2 && dendroCount >= 2) return elementalResonance.Pyro2Dendro2WithTraveler
+    if(travelerCount = 1 && hydroCount >= 2 && anemoCount >= 2) return elementalResonance.Hydro2Anemo2WithTraveler
+    if(travelerCount = 1 && hydroCount >= 2 && electroCount >= 2) return elementalResonance.Hydro2Electro2WithTraveler
+    if(travelerCount = 1 && hydroCount >= 2 && cryoCount >= 2) return elementalResonance.Hydro2Cryo2WithTraveler
+    if(travelerCount = 1 && hydroCount >= 2 && dendroCount >= 2) return elementalResonance.Hydro2Dendro2WithTraveler
+    if(travelerCount = 1 && anemoCount >= 2 && electroCount >= 2) return elementalResonance.Anemo2Electro2WithTraveler
+    if(travelerCount = 1 && anemoCount >= 2 && cryoCount >= 2) return elementalResonance.Anemo2Cryo2WithTraveler
+    if(travelerCount = 1 && geoCount >= 2 && pyroCount >= 2) return elementalResonance.Anemo2Dendro2WithTraveler
+    if(travelerCount = 1 && electroCount >= 2 && cryoCount >= 2) return elementalResonance.Electro2Cryo2WithTraveler
+    if(travelerCount = 1 && electroCount >= 2 && dendroCount >= 2) return elementalResonance.Electro2Dendro2WithTraveler
+    if(travelerCount = 1 && cryoCount >= 2 && dendroCount >= 2) return elementalResonance.Cryo2Dendro2WithTraveler
 }
 
 const action = {
@@ -605,3 +684,19 @@ function load() {
     let images = [];
     character.forEach(char => images.push(new Image().src = generateSrc(char, 'card', 'png')))
 }
+
+function getTravelerOnStartup(){
+    var minNum = 0;
+    var maxNum = 1;
+    var randomNum = Math.floor(Math.random() * (maxNum + 1) + minNum);
+    if (randomNum == 0) {
+        document.getElementById(lumineStatup).style.visibility="visible";
+    }
+    else if (randomNum == 1) {
+        document.getElementById(aetherStartup).style.visibility="visible";
+    }
+    else {
+        document.getElementById(lumineStartup).style.visibility="visible";
+    }
+}
+
