@@ -48,7 +48,7 @@ body {
         display: none !important;
     }
 
-    .teamContainer {
+    .teamMaker {
         display: flex !important;
     }
 
@@ -152,48 +152,16 @@ header {
 }
 
 
-.teamContainer {
+.teamMaker {
     height: 88%;
     // display: flex;
     justify-content: space-evenly;
     align-items: center;
     transition: height 200ms ease-in-out;
-
-    .leftSkew {
-
-        .charContainer {
-            transform: skewX(10deg);
-        }
-
-        .character {
-            transform: skewX(-10deg);
-        }
-    }
-
-    .rightSkew {
-        .charContainer {
-
-            transform: skewX(-10deg);
-        }
-
-        .character {
-            transform: skewX(10deg);
-        }
-    }
-
-    .normalSkew {
-        .charContainer {
-            transform: skewX(0deg);
-
-        }
-
-        .character {
-            transform: skewX(0deg);
-        }
-    }
+    // removed DBFZ app's skew
 }
 
-.characterContainer {
+.teamContainer {
     height: 100%;
     width: 100%;
     max-width: 100%;
@@ -204,7 +172,7 @@ header {
 
 }
 
-.charContainer {
+.charcontainer {
     position: relative;
     height: 100%;
     width: 100%;
@@ -370,7 +338,7 @@ header {
 
 
 
-.teamContainer {
+.teamMaker {
     display: none;
 }
 
@@ -816,7 +784,7 @@ header {
         display: none !important;
     }
 
-    .teamContainer {
+    .teamMaker {
         height: 100% !important;
     }
 
@@ -865,7 +833,7 @@ header {
         display: none !important;
     }
 
-    .teamContainer {
+    .teamMaker {
         display: flex !important;
     }
 
@@ -886,7 +854,7 @@ header {
 
 @include mobile {
     
-    .teamContainer {
+    .teamMaker {
         height: unset !important;
     }
     
@@ -902,16 +870,16 @@ header {
                 transition: all 200ms ease-in-out;
             }
         }
-        .teamContainer, header, .footer {
+        .teamMaker, header, .footer {
             display: none !important;
         }
     }
 
 
-    #characterContainer {
+    #teamContainer {
         flex-direction: column;
 
-        .charContainer {
+        .charcontainer {
             transform: skewX(0deg);
 
             &:last-child {

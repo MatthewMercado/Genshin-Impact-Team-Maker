@@ -37,7 +37,7 @@ body {
   display: none !important;
 }
 
-.loaded .teamContainer {
+.loaded .teamMaker {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -154,7 +154,7 @@ header .socialMedia > div svg {
           animation: rotateLogo 2000ms cubic-bezier(0.86, 0, 0.07, 1) alternate infinite;
 }
 
-.teamContainer {
+.teamMaker {
   height: 90%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -166,7 +166,7 @@ header .socialMedia > div svg {
   transition: height 200ms ease-in-out;
 }
 
-.characterContainer {
+.teamContainer {
   height: 100%;
   width: 100%;
   max-width: 100%;
@@ -325,7 +325,7 @@ header .socialMedia > div svg {
           transform: rotate(180deg);
 }
 
-.teamContainer {
+.teamMaker {
   display: none;
 }
 
@@ -895,7 +895,7 @@ header .socialMedia > div svg {
   display: none !important;
 }
 
-.photoMode .teamContainer {
+.photoMode .teamMaker {
   height: 100% !important;
 }
 
@@ -942,7 +942,7 @@ header .socialMedia > div svg {
   display: none !important;
 }
 
-.loaded .teamContainer {
+.loaded .teamMaker {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -961,7 +961,7 @@ header .socialMedia > div svg {
 }
 
 @media (min-width: 0px) and (max-width: 736px) {
-  .teamContainer {
+  .teamMaker {
     height: unset !important;
   }
   .loaded {
@@ -979,32 +979,32 @@ header .socialMedia > div svg {
     -webkit-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
   }
-  .loaded .teamContainer, .loaded header, .loaded .footer {
+  .loaded .teamMaker, .loaded header, .loaded .footer {
     display: none !important;
   }
-  #characterContainer {
+  #teamContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #characterContainer .charContainer {
+  #teamContainer .charContainer {
     -webkit-transform: skewX(0deg);
             transform: skewX(0deg);
   }
-  #characterContainer .charContainer:last-child .charImg {
+  #teamContainer .charContainer:last-child .charImg {
     overflow: hidden;
   }
-  #characterContainer .character {
+  #teamContainer .character {
     -webkit-transform: skewX(0deg);
             transform: skewX(0deg);
   }
-  #characterContainer .charImg {
+  #teamContainer .charImg {
     height: 20rem;
     overflow: hidden;
   }
-  #characterContainer .charImg img,
-  #characterContainer .charImg .smol {
+  #teamContainer .charImg img,
+  #teamContainer .charImg .smol {
     position: absolute;
     height: 55rem !important;
     max-width: unset !important;

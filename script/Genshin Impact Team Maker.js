@@ -525,7 +525,7 @@ $$('.arrow').forEach(arrow => {
 })
 
 $('.teamImg').addEventListener('click', () => {
-    const elem = $('.teamContainer');
+    const elem = $('.teamMaker');
     $('body').classList.add('photoMode')
     // if (elem.requestFullscreen) {
     //     elem.requestFullscreen();
@@ -539,7 +539,7 @@ $('.teamImg').addEventListener('click', () => {
 document.addEventListener('keydown', e => {
     if($('body').classList.contains('photoMode') && e.key === 'Escape') {
         $('body').classList.remove('photoMode')
-        $('.characterContainer').classList.remove('hideAssists');
+        $('.teamContainer').classList.remove('hideAssists');
     }
 })
 // $('.teamTier').addEventListener('click', () => $('body').classList.remove('photoMode'))
