@@ -1,239 +1,298 @@
 //window.location.host + window.location.pathname
 const $ = e => document.querySelector(e);
 const $$ = e => document.querySelectorAll(e);
-const character = [{
+const character = element => weapon => [{
     //When more elements are unlocked for the Travelers, or multiple for some characters, I'll add them manually here, instead of using 'All'.
-        name: 'Aether',
-        card: 'Aether_c',
-        portrait: 'Aether_p',
-        element: 'None',
-        weapon: 'Sword'
+        name: 'Aether (Male Traveler)',
+        cardRender: 'Aether_c',
+        portraitRender: 'Aether_p',
+        element: element[0],
+        weapon: weapon[0]
     },
     {
         name: 'Albedo',
-        card: 'Albedo_c',
-        portrait: 'Albedo_p',
-        element: 'Geo',
-        weapon: 'Sword'
+        cardRender: 'Albedo_c',
+        portraitRender: 'Albedo_p',
+        element: element[4],
+        weapon: weapon[0]
     },
     {
         name: 'Amber',
-        card: 'Amber_c',
-        portrait: 'Amber_p',
-        element: 'Pyro',
-        weapon: 'Bow'
+        cardRender: 'Amber_c',
+        portraitRender: 'Amber_p',
+        element: element[2],
+        weapon: weapon[1]
     },
     /*{
         name: 'Ayaka',
-        card: 'Ayaka_c',
-        portrait: 'Ayaka_p',
-        element: 'Cryo',
-        weapon: 'Sword'
+        cardRender: 'Ayaka_c',
+        portraitRender: 'Ayaka_p',
+        element: element[6],
+        weapon: weapon[0]
     },*/
     {
         name: 'Barbara',
-        card: 'Barbara_c',
-        portrait: 'Barbara_p',
-        element: 'Hydro',
-        weapon: 'Catalyst'
+        cardRender: 'Barbara_c',
+        portraitRender: 'Barbara_p',
+        element: element[3],
+        weapon: weapon[4]
     },
     {
         name: 'Beidou',
-        card: 'Beidou_c',
-        portrait: 'Beidou_p',
-        element: 'Electro',
-        weapon: 'Claymore'
+        cardRender: 'Beidou_c',
+        portraitRender: 'Beidou_p',
+        element: element[5],
+        weapon: weapon[3]
     },
     {
         name: 'Bennett',
-        card: 'Bennet_c',
-        portrait: 'Bennett_p',
-        element: 'Pyro',
-        weapon: 'Sword'
+        cardRender: 'Bennet_c',
+        portraitRender: 'Bennett_p',
+        element: element[2],
+        weapon: weapon[0]
     },
     {
         name: 'Chongyun',
-        card: 'Chongyun_c',
-        portrait: 'Chongyun_p',
-        element: 'Cryo',
-        weapon: 'Claymore'
+        cardRender: 'Chongyun_c',
+        portraitRender: 'Chongyun_p',
+        element: element[6],
+        weapon: weapon[3]
     },
     {
         name: 'Diluc',
-        card: 'Diluc_c',
-        portrait: 'Diluc_p',
-        element: 'Pyro',
-        weapon: 'Claymore'
+        cardRender: 'Diluc_c',
+        portraitRender: 'Diluc_p',
+        element: element[2],
+        weapon: weapon[3]
     },
     {
         name: 'Diona',
-        card: 'Diona_c',
-        portrait: 'Diona_p',
-        element: 'Cryo',
-        weapon: 'Bow'
+        cardRender: 'Diona_c',
+        portraitRender: 'Diona_p',
+        element: element[6],
+        weapon: weapon[1]
     },
     {
         name: 'Fischl',
-        card: 'Fischl_c',
-        portrait: 'Fischl_p',
-        element: 'Electro',
-        weapon: 'Bow'
+        cardRender: 'Fischl_c',
+        portraitRender: 'Fischl_p',
+        element: element[5],
+        weapon: weapon[1]
     },
     {
         name: 'Ganyu',
-        card: 'Ganyu_c',
-        portrait: 'Ganyu_p',
-        element: 'Cryo',
-        weapon: 'Bow'
+        cardRender: 'Ganyu_c',
+        portraitRender: 'Ganyu_p',
+        element: element[6],
+        weapon: weapon[1]
     },
     /*{
         name: 'Hu Tao',
-        card: 'HuTao_c',
-        portrait: 'HuTao_p',
-        element: 'Pyro',
-        weapon: 'Polearm'
+        cardRender: 'Hu_Tao_c',
+        portraitRender: 'Hu_Tao_p',
+        element: element[2]
+        weapon: weapon[2]
     },*/    
     {
         name: 'Jean',
-        card: 'Jean_c',
-        portrait: 'Jean_p',
-        element: 'Anemo',
-        weapon: 'Sword'
+        cardRender: 'Jean_c',
+        portraitRender: 'Jean_p',
+        element: element[4],
+        weapon: weapon[0]
     },
     {
         name: 'Kaeya',
-        card: 'Kaeya_c',
-        portrait: 'Kaeya_p',
-        element: 'Cryo',
-        weapon: 'Sword'
+        cardRender: 'Kaeya_c',
+        portraitRender: 'Kaeya_p',
+        element: element[6],
+        weapon: weapon[0]
     },
     {
         name: 'Keqing',
-        card: 'Keqing_c',
-        portrait: 'Keqing_p',
-        element: 'Electro',
-        weapon: 'Sword'
+        cardRender: 'Keqing_c',
+        portraitRender: 'Keqing_p',
+        element: element[5],
+        weapon: weapon[0]
     },
     {
         name: 'Klee',
-        card: 'Klee_c',
-        portrait: 'Klee_p',
-        element: 'Pyro',
-        weapon: 'Catalyst'
+        cardRender: 'Klee_c',
+        portraitRender: 'Klee_p',
+        element: element[2],
+        weapon: weapon[4]
     },
     {
         name: 'Lisa',
-        card: 'Lisa_c',
-        portrait: 'Lisa_p',
-        element: 'Electro',
-        weapon: 'Catalyst'
+        cardRender: 'Lisa_c',
+        portraitRender: 'Lisa_p',
+        element: element[5],
+        weapon: weapon[4]
     },
     {
-        name: 'Lumine',
-        card: 'Lumine_c',
-        portrait: 'Lumine_p',
-        element: 'None',
-        weapon: 'Sword'
+        name: 'Lumine (Female Traveler)',
+        cardRender: 'Lumine_c',
+        portraitRender: 'Lumine_p',
+        element: element[0],
+        weapon: weapon[0]
     },
     {
         name: 'Mona',
-        card: 'Mona_c',
-        portrait: 'Mona_p',
-        element: 'Hydro',
-        weapon: 'Catalyst'
+        cardRender: 'Mona_c',
+        portraitRender: 'Mona_p',
+        element: element[3],
+        weapon: weapon[4]
     },
     {
         name: 'Ningguang',
-        card: 'Ningguang_c',
-        portrait: 'Ningguang_p',
-        element: 'Geo',
-        weapon: 'Catalyst'
+        cardRender: 'Ningguang_c',
+        portraitRender: 'Ningguang_p',
+        element: element[1],
+        weapon: weapon[4]
     },
     {
         name: 'Noelle',
-        card: 'Noelle_c',
-        portrait: 'Noelle_p',
-        element: 'Geo',
-        weapon: 'Claymore'
+        cardRender: 'Noelle_c',
+        portraitRender: 'Noelle_p',
+        element: element[1],
+        weapon: weapon[3]
     },
     {
         name: 'Qiqi',
-        card: 'Qiqi_c',
-        portrait: 'Qiqi_p',
-        element: 'Cryo',
-        weapon: 'Sword'
+        cardRender: 'Qiqi_c',
+        portraitRender: 'Qiqi_p',
+        element: element[6],
+        weapon: weapon[0]
     },
     {
         name: 'Razor',
-        card: 'Razor_c',
-        portrait: 'Razor_p',
-        element: 'Electro',
-        weapon: 'Claymore'
+        cardRender: 'Razor_c',
+        portraitRender: 'Razor_p',
+        element: element[5],
+        weapon: weapon[3]
     },
     /*{
         name: 'Rosaria',
-        card: 'Rosaria_c',
-        portrait: 'Rosaria_p',
-        element: 'Cryo',
-        weapon: 'Polearm'
+        cardRender: 'Rosaria_c',
+        portraitRender: 'Rosaria_p',
+        element: element[6],
+        weapon: weapon[2]
     },*/
     {
         name: 'Sucrose',
-        card: 'Sucrose_c',
-        portrait: 'Sucrose_p',
-        element: 'Anemo',
-        weapon: 'Catalyst'
+        cardRender: 'Sucrose_c',
+        portraitRender: 'Sucrose_p',
+        element: element[4],
+        weapon: weapon[4]
     },
     {
         name: 'Tartaglia',
-        card: 'Tartaglia_c',
-        portrait: 'Tartaglia_p',
-        element: 'Hydro',
-        weapon: 'Bow'
+        cardRender: 'Tartaglia_c',
+        portraitRender: 'Tartaglia_p',
+        element: element[3],
+        weapon: weapon[1]
     },
     {
         name: 'Venti',
-        card: 'Venti_c',
-        portrait: 'Venti_p',
-        element: 'Anemo',
-        weapon: 'Bow'
+        cardRender: 'Venti_c',
+        portraitRender: 'Venti_p',
+        element: element[4],
+        weapon: weapon[1]
     },
     {
         name: 'Xiangling',
-        card: 'Xiangling_c',
-        portrait: 'Xiangling_p',
-        element: 'Pyro',
-        weapon: 'Polearm'
+        cardRender: 'Xiangling_c',
+        portraitRender: 'Xiangling_p',
+        element: element[2],
+        weapon: weapon[2]
     },
     {
         name: 'Xiao',
-        card: 'Xiao_c',
-        portrait: 'Xiao_p',
-        element: 'Anemo',
-        weapon: 'Polearm'
+        cardRender: 'Xiao_c',
+        portraitRender: 'Xiao_p',
+        element: element[4],
+        weapon: weapon[2]
     },
     {
         name: 'Xingqiu',
-        card: 'Xinqiu_c',
-        portrait: 'Xingqiu_p',
-        element: 'Hydro',
-        weapon: 'Sword'
+        cardRender: 'Xinqiu_c',
+        portraitRender: 'Xingqiu_p',
+        element: element[3],
+        weapon: weapon[0]
     },
     {
         name: 'Xinyan',
-        card: 'Xinyan_c',
-        portrait: 'Xinyan_p',
-        element: 'Pyro',
-        weapon: 'Claymore'
+        cardRender: 'Xinyan_c',
+        portraitRender: 'Xinyan_p',
+        element: element[2],
+        weapon: weapon[3]
     },
     {
         name: 'Zhongli',
-        card: 'Zhongli_c',
-        portrait: 'Zhongli_p',
-        element: 'Geo',
-        weapon: 'Polearm'
+        cardRender: 'Zhongli_c',
+        portraitRender: 'Zhongli_p',
+        element: element[1],
+        weapon: weapon[2]
     }
 ]
+
+const weapon = [
+    {
+        type: 'Sword',
+        wepRender: 'sword'
+    },
+    {
+        type: 'Bow',
+        wepRender: 'bow'
+    },
+    {
+        type: 'Polearm',
+        wepRender: 'polearm'
+    },
+    {
+        type: 'Claymore',
+        wepRender: 'claymore'
+    },
+    {
+        type: 'Catalyst',
+        wepRender: 'catalyst'
+    }
+]
+
+const element = [
+    {
+        type: 'None',
+        visionRender: 'none'
+    },
+    {
+        type: 'Geo',
+        visionRender: 'geo'
+    },
+    {
+        type: 'Pyro',
+        eleRender: 'pyro'
+    },
+    {
+        type: 'Hydro',
+        visionRender: 'hydro'
+    },
+    {
+        type: 'Anemo',
+        visionRender: 'anemo'
+    },
+    {
+        type: 'Electo',
+        visionRender: 'electo'
+    },
+    {
+        type: 'Cryo',
+        visionRender: 'cryo'
+    },
+    {
+        type: 'Dendro',
+        visionRender: 'dendro'
+    }
+]
+
 const teamPosition = {
     first: 0,
     second: 1,
@@ -260,8 +319,8 @@ if (character.Lumine == teamPosition.first || character.Lumine == teamPosition.s
 }
 
 }
-const travelerCount = character => teamPosition => {
-    if (character.Aether == teamPosition.first  || character.Aether == teamPosition.second || character.Aether == teamPosition.third || character.Aether == teamPosition.fouth || character.Lumine == teamPosition.first || character.Lumine == teamPosition.second || character.Lumine == teamPosition.third || character.Lumine == teamPosition.fourth)
+const travelerCount = character => element => {
+    if (character.element = element[0])
     {
         travelerCount+1;
         anemoCount+1;
@@ -269,44 +328,44 @@ const travelerCount = character => teamPosition => {
     }
 }
 
-const geoCount = character => {
-    if (character.element = 'Geo'){
+const geoCount = character => element => {
+    if (character.element = element[1]){
         geoCount+1;
     }
 }
 
-const pyroCount = character => {
-    if (character.element = 'Pyro'){
+const pyroCount = character => element => {
+    if (character.element = element[2]){
         pyroCount+1;
     }
 }
 
-const hydroCount = character => {
-    if (character.element = 'Hydro'){
+const hydroCount = character => element => {
+    if (character.element = element[3]){
         hydroCount+1;
     }
 }
 
-const anemoCount = character => {
-    if (character.element = 'Anemo'){
+const anemoCount = character => element => {
+    if (character.element = element[4]){
         anemoCount+1;
     }
 }
 
-const electroCount = character => {
-    if (character.element = 'Electro'){
+const electroCount = character => element => {
+    if (character.element = element[5]){
         electroCount+1;
     }
 }
 
-const cryoCount = character => {
-    if (character.element = 'Cryo'){
+const cryoCount = character => element => {
+    if (character.element = element[6]){
         cryoCount+1;
     }
 }
 
-const dendroCount = character => {
-    if (character.element = 'Dendro'){
+const dendroCount = character => element => {
+    if (character.element = element[7]){
         dendroCount+1;
     }
 }
@@ -443,7 +502,7 @@ window.addEventListener('load', () => {
     //load();
 });
 
-const generateSrc = (character, rendersDir, imgExt) => `./${rendersDir}/${character.card}.${imgExt}`;
+const generateSrc = (character, rendersDir, imgExt) => `./${rendersDir}/${character.cardRender}.${imgExt}`;
 
 const changeData = (node, newSrc, newData) => {
     node.src = newSrc
@@ -506,8 +565,8 @@ const swapData = (character, pos, act) => {
     let newCharName = $$('img[data-position]')[newIndex];
     
     [newCharName.dataset.char, character.dataset.char] = [character.dataset.char, newCharName.dataset.char];
-    changeData(character, generateSrc(character[charIndex(character, character.dataset.char)], 'card', 'png'), character[charIndex(character, character.dataset.char)]);
-    changeData(newCharName, generateSrc(character[charIndex(character, newCharName.dataset.char)], 'card', 'png'), character[charIndex(character, newCharName.dataset.char)])
+    changeData(character, generateSrc(character[charIndex(character, character.dataset.char)], 'cardRender', 'png'), character[charIndex(character, character.dataset.char)]);
+    changeData(newCharName, generateSrc(character[charIndex(character, newCharName.dataset.char)], 'cardRender', 'png'), character[charIndex(character, newCharName.dataset.char)])
     $$('img[data-position]').forEach((img, i) => {
         $$('.character')[i].classList.add(img.dataset.assist)
     })
@@ -519,7 +578,8 @@ $$('.arrow').forEach(arrow => {
             dataset
         } = e.currentTarget;
         let index = returnIndex(character, dataset, action);
-        dataset.action === 'change' && changeData($(`img[data-position=${dataset.teamPosition}]`), generateSrc(character[index], 'card', 'png'), character[index])
+        dataset.action === 'change' && changeData($(`img[data-position=${dataset.teamPosition}]`), generateSrc(character[index], 'cardRender', 'png'), character[index])
+        //dataset.action === 'change' && changeData($(`img[data-position=${dataset.teamPosition}]`), generateSrc(character[index], 'portraitRender', 'png'), character[index])
         dataset.action === 'swap' && swapData($(`img[data-position=${dataset.teamPosition}]`), dataset.teamPosition, dataset.direction);
     })
 })
@@ -561,7 +621,7 @@ $('.generate').addEventListener('click', e => {
         uniq = new Set([randoms.first, randoms.second, randoms.third, randoms.fourth]);
     }
     $$('img[data-position]').forEach((img,i) => {
-        changeData(img, generateSrc(character[randoms[img.dataset.teamPosition]],'card', 'png'),character[randoms[img.dataset.teamPosition]]);
+        changeData(img, generateSrc(character[randoms[img.dataset.teamPosition]],'cardRender', 'png'),character[randoms[img.dataset.teamPosition]]);
         $('.headerLogo  img').classList.add('loading');
         img.addEventListener('load', () => $('.headerLogo  img').classList.remove('loading'))
         $$('.character')[i].classList.remove('a', 'b', 'c');
@@ -682,7 +742,7 @@ function random(n, p=undefined) {
 
 function load() {
     let images = [];
-    character.forEach(char => images.push(new Image().src = generateSrc(char, 'card', 'png')))
+    character.forEach(char => images.push(new Image().src = generateSrc(char, 'cardRender', 'png')))
 }
 
 function getTravelerOnStartup(){

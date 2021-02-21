@@ -299,7 +299,7 @@ header {
         height: 33%;
         align-items: center;
 
-        arrow {
+        .arrow {
             height: 2.4rem;
             width: 2.4rem;
             cursor: pointer;
@@ -846,12 +846,6 @@ header {
     }
 }
 
-
-
-
-
-
-
 @include mobile {
     
     .teamMaker {
@@ -907,9 +901,6 @@ header {
 
 
         }
-
-
-
     }
 
     .footer {
@@ -918,25 +909,6 @@ header {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @keyframes rotateLogo {
     from {
